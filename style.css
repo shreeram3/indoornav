@@ -148,7 +148,7 @@ input:focus{
 	align-items: center;
 }
 .college_logo{
-	width: 20rem;
+	width: 45%;
 	background: white;
 	border-radius: 50%;
 	padding: 1rem;
@@ -157,7 +157,6 @@ input:focus{
 }
 .college_logo img {
 	width: 100%;
-	aspect-ratio:1;
 }
 .wrapper > div {
 	padding: 1rem;
