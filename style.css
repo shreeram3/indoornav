@@ -157,6 +157,7 @@ input:focus{
 }
 .college_logo img {
 	width: 100%;
+	aspect-ratio:1;
 }
 .wrapper > div {
 	padding: 1rem;
