@@ -235,6 +235,7 @@ input:focus{
 	width: 100vw;
 }
 .back{
+	aspect-ratio:1;
 	position: fixed;
 	margin: 0.8rem;
 	top: 0;
