@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto:wght@400&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: var(--ft-family-pri);
+}
+
+:root{
+	--ft-family:'Josefin Sans', sans-serif;
+	--ft-family-pri :'Roboto', sans-serif;;
+	--clr-maincontent:#ddd; 
+	--ft-search-clr:#000 ;
+	--gs-btn-clr: #EA0D63;
+}
+.maincontent{
+	height: 100vh;
+	width: 100vw;
+	background:var(--clr-maincontent);
+}
+.center-align{
+	margin: 0 auto;
+	max-width: min(32rem,70%);;
+}
+/*starting with widgets */
+.main_wrapper{
+	width: 100vw;
+	background: transparent;
+}
+.search_bar{
+	top: 0;
+	width: 100%;
+	position: fixed;
+
+}
+.search_bar .flex{
+	margin-top:1rem ;
+	background:white;
+	width: 80%;
+	padding: 0.6rem 1rem;
+	border-radius: 1rem;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	align-items: center; 
+}
+.droparrowimg{
+	transform: rotate(90deg);
+	transition: transform 50ms ease-in;
+}
+.search_bar img{
+	width: 1.2rem;
+	aspect-ratio: 1;
+	border: solid #333 1px;
+	border-radius: 50%;
+}
+.search_text{
+	width: 100%;
+}
+.search_text input{
+	width: 100%;
+	border: transparent;
+	background: transparent;
+	color: var(--ft-search-clr);
+}
+input:focus{
+	outline: none;
+}
+.go_btn >button{
+	border-radius: 50%;
+	border: transparent;
+	color: white;
+	background: green;
+	padding: 0.6rem;
+	text-transform: capitalize;
+}
+/*for arrow*/
+.arrows{
+	position: fixed;
+	top:30%;
+	left: 2%;
+}
+.arrows > div{
+	margin: 1rem;
+}
+
+.arrows img{
+	width: 1.2rem;
+	aspect-ratio: 1;
+}
+.circle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:.3rem;
+	background: white;
+	border-radius: 50%;
+	aspect-ratio: 1;
+}
+/*floor*/
+.floors{
+	position: fixed;
+	bottom: 8%;
+	right: 2%;
+}
+.floors>div{
+	margin: 0.2rem;
+	text-align: center;
+	width: 1rem;
+	aspect-ratio: 1;
+}
+.active{
+	background: yellow;
+	color: #333;
+}
+/*current position*/
+.current_position{
+	background: rgba(9, 9, 9, 0.30);
+	position: fixed;
+	bottom: 2%;
+	left: 0;
+	border-radius: 0 1.2rem 1.2rem 0;
+	padding: 0.5rem 2rem;
+	color: #fff;
+}
+.current_position>div{
+	font-size: 0.65rem;
+}
+/*compelete with main page */
+
+/*for home page*/
+.home_wrapper {
+	top: 0;
+	left: 0;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0, 0, 0, 0.90);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	visibility: visible;
+	transition: 0.2s ease-in-out;
+}
+
+.wrapper{
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: min(72rem,90%);
+	justify-content: center;
+	align-items: center;
+}
+.college_logo{
+	width: min(45%,10rem);
+	/*height: 10rem;*/
+	background: white;
+	border-radius: 50%;
+	padding: 1rem;
+	aspect-ratio: 1;
+	margin: 2.5rem;
+}
+@supports not (aspect-ratio: auto){
+	.college_logo{
+		height: min(10rem);
+	}
+	.back{
+		width: 0.6rem;
+	height: 0.6rem;
+	}
+}
+.college_logo img {
+	width: 100%;
+}
+.wrapper > div {
+	padding: 1rem;
+}
+.welcome-text{
+	font-size: 2.5rem;
+	font-family:var(--ft-family) ;
+}
+.welcome-quote {
+	font-size: 0.8rem;
+}
+.welcome-quote::before{
+	content: open-quote;
+}
+.welcome-quote::after{
+	content: close-quote;
+}
+.author{
+	margin-top: 0;
+	font-size: 0.6rem;
+}
+.wrapper >button{
+	margin: 1rem;
+	padding:1rem 2rem;
+	border: transparent;
+	background:var(--gs-btn-clr);
+	color: white;
+}
+/*search list*/
+
+.fullpage{
+	width: 100vw;
+	height: 100vh;
+	background: #f2f2f2;
+	transition: 0.2s ease-in;
+}
+
+.container_list{
+	padding: 1rem;
+	overflow: scroll;
+	height: 100%;
+}
+.container_list > div{
+	padding: 1rem;
+	border-bottom: solid #ddd 1px;
+}
+#searchlistexist{
+	scrollbar-width: none;
+}
+
+#searchlistexist::-webkit-scrollbar{
+	width: 0;
+}
+
+.teachname{
+	font-size: 0.6rem;
+	padding: 0.2rem 0.2rem 0rem 0.2rem ;
+	color: #333;
+	font-family: var(--ft-family);
+}
+
+#panorama{
+	top: 0;
+	left :0;
+	overflow: hidden;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+}
+.back{
+	position: fixed;
+	margin: 0.8rem;
+	padding: 0.2rem;
+	aspect-ratio: 1;	
+	top: 0;
+	right: 0;
+}
