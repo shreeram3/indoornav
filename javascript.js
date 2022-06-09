@@ -101,7 +101,7 @@ new PhotoSphereViewer.Viewer({
   caption: 'Parc national du Mercantour <b>&copy; Damien Sorel</b>',
   loadingImg: 'https://photo-sphere-viewer.js.org/assets/photosphere-logo.gif',
   defaultLat: 0.3,
-  touchmoveTwoFingers: true,
+  touchmoveTwoFingers: false,
   mousewheelCtrlKey: true,
 });
 
