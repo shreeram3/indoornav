@@ -5,7 +5,7 @@
 	const arrows = document.getElementById('arrows')
 	const currentposition = document.getElementById("current_position")
 	const searchlist = document.getElementById("search_bar");
-	const img = ".src/PANO_20220424_122029.jpg"
+	const img = "src/PANO_20220424_122029.jpg"
 const searchinput = document.getElementById("searchinput")
 searchinput.addEventListener('keyup',(e)=>{
 	const searchString = e.target.value.toLowerCase()
@@ -117,7 +117,7 @@ const back=()=>{
 }
 
 urllist = {
-	"a1":".src/PANO_20220424_122029.jpg",
-	"a2":".src/PANO_20220424_122029.jpg",
-	"a3":".src/PANO_20220424_122029.jpg",
+	"a1":"src/PANO_20220424_122029.jpg",
+	"a2":"src/PANO_20220424_122029.jpg",
+	"a3":"src/PANO_20220424_122029.jpg",
 }
